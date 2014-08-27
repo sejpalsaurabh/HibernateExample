@@ -11,3 +11,5 @@ You can find many resources on Internet for the Basic Hibernate Configuration bu
 ###### Purpose of this Repository is to Demostrate Hibernate Operations using Latest Version.
 
 **_This Repository is under Creative Commons CC0 1.0 Universal License_**
+
+So Fork it and Distribute to Others.
