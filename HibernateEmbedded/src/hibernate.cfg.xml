@@ -28,6 +28,16 @@
         	4) create-drop -  -->
         <property name="hibernate.hbm2ddl.auto">create</property>
         
+		<!-- Defining the Maximum active Connection at a time -->
+		<property name="hibernate.connection.pool_size">1</property>
+
+		<!-- By Default this Property is set to False if you don't declare this 
+		Property. if it set to True than you don't need to Commit the Transaction 
+		into Database. Hibernate implicitly take care of commiting Records into Database 
+		after Each Session Transaction and if it is set to False than you need to 
+		commit the Transaction explicitly. e.g. session.getTransaction().commit(); -->
+		<property name="hibernate.connection.autocommit">false</property>
+		
         <!-- Mapping Property Declaration -->
         <mapping class="com.hibernate.model.UserDetails"/>
         <mapping class="com.hibernate.model.Address"/>
